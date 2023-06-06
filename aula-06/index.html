@@ -14,12 +14,35 @@
     
     <section>
         <div id="info">
-            Ano de nascimento: <input type="number" name="data" id="data" >
+            <p>Ano de nascimento: <input type="number" name="ano" id="ano" ></p>
+
+            <p>
+                sexo:
+                <input type="radio" name="sex" id="mas" checked>
+                <label for="sex">Masculino</label>
+                <input type="radio" name="sex" id="fem">
+                <label for="sex">Feminino</label>
+                <input type="radio" name="sex" id="indef">
+                <label for="sex">Não definido </label>
+
+            </p>
+
+            <p>
+                <input id="botao" type="button" value="Verificar" onclick="verificar()">
+            </p>
+
+            
+
         </div >
-        <div id="foto">
+        <div id="resultado">
+            Digite seu ano de nascimento !
+
+            <img id="foto" src="" alt="">
 
         </div>
     </section>
-    <footer><p>Feito por Vitor</p></footer>
+    <footer><p>Feito por Vitor</p></footer> 
+
+    <script src="script.js"></script>
 </body>
 </html>
