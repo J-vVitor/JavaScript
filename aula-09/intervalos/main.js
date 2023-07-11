@@ -3,25 +3,18 @@ const iniciar = document.querySelector('#iniciar');
 const pausar = document.querySelector('#pausar');
 const zerar = document.querySelector('#zerar');
 
-function iniciarb(){
-    console.log('foi')
-};
-function pausarb(){
-    console.log('foi')
-};
-function zerarb(){
-    console.log('foi')
-};
+iniciar.addEventListener('click', function(event){
+    alert('iniciou!');
 
-function mostraHoras(){
-    let hora = new Date();
-    return hora.toLocaleTimeString('pt-BR',{ hour12:false});
-}
+})
 
-const timer = setInterval(function(){
-    console.log(mostraHoras());
-},1000);
+pausar.addEventListener('click',function(event){
+    alert('Pausou!');
 
-const intervalo = setTimeout(function(){
-    clearInterval(timer);
-},10000 );
+})
+
+zerar.addEventListener('click',function(event){
+    alert('Zerou!')
+
+})
+
