@@ -9,9 +9,20 @@ body{
     padding: 6px;
     background-color: rgb(12, 68, 111);
 }
-h1{
+h1{ position: relative;
     text-align: center;
     padding-top: 1px;
+}
+
+h1::after{
+    position: absolute;
+    content: '';
+    background-color: black;
+    width: 38px;
+    border-radius: 3px 0px 0px 3px;
+    left: 60px;
+    bottom: 0px;
+    height: 3px;
 }
 section{
     margin: auto;

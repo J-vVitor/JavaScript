@@ -15,11 +15,10 @@ function back(){
     //SUBSTRING RETORNA A ÚLTIMA STRING 
 }
 
-
 function calcular(){
     var resultado = document.getElementById('display').innerHTML;
     if(resultado){
-        
+
         document.getElementById('display').innerHTML = eval(resultado);
 
     }
