@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color:#005663;
+}
+
+div#main{
+    background-color: white;
+    width: 600px;
+    margin:40px auto;
+    padding: 10px;
+    border-radius:8px ;
+}
+
+div#lista{
+    padding: 4px;
+}
+
+input{
+    padding: 4px;
+}
+
+button{
+    padding: 4px;
+}
+
+ul{
+    margin-left: 40px;
+    width: 400px;
+    margin-top: 10px;
+}
+
+li{
+    margin-top: 10px;
+}
+
+.btnApagar{
+    width: 60px;
+    height: 28px;
+}
+

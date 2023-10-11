@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <script>
+        function foco(){
+            inputItem.focus()
+        }
+    </script>
+</head>
+<body onload="foco()">
+    <div id="main">
+        <h1>Lista de tarefas</h1>
+        <div id="lista">
+            <input type="text" name="itemAdd" id="item">
+            <button onclick="envio()">Adicionar item</button>
+        </div>
+        <div>
+            <ul id="resultados">
+
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        let listaResultado = document.getElementById('resultados');
+        let inputItem = document.getElementById('item');
+      
+
+        function criarLi(){
+            const li = document.createElement('li');
+            return li
+        }
+
+        document.addEventListener('click',(e)=>{
+            const el = e.target;
+
+            if(el.classList.contains('btnApagar')){
+                el.parentElement.remove()
+            }
+        })
+
+        function btnApagar(li){
+            li.innerText += ' ';
+            const btnDeletar = document.createElement('button')
+            btnDeletar.innerText = 'Apagar';
+            btnDeletar.setAttribute('class', 'btnApagar')
+            li.appendChild(btnDeletar)
+        }
+
+        function criarTarefa(textoInput){
+            const li = criarLi()
+            li.innerText = textoInput
+            listaResultado.appendChild(li)
+            btnApagar(li)
+        }
+
+        function limparImput(){
+            inputItem.value = ''
+            inputItem.focus()
+        }
+
+       inputItem.addEventListener('keypress',(e) =>{
+            if(e.keyCode === 13){
+                
+                envio()
+                limparImput()
+            }
+       })
+
+
+       function envio(){
+        if(!inputItem.value) return;
+        criarTarefa(inputItem.value)
+       }
+
+
+        
+
+    </script>
+</body>
+</html>
