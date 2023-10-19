@@ -19,7 +19,7 @@ const pessoas = [
     {nome:'juliana' , idade:37 }
 ]
 function filtrarNome(obj){
-    return obj.nome.length < 5? true:false
+    return obj.nome.length < 5 ? true:false
 }
 
 const nomeFiltardo = pessoas.filter(filtrarNome)
