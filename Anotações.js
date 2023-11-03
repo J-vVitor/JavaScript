@@ -9,5 +9,9 @@
 .filter - Requer um function para ser executada;
 .MAP - 
 .REDUCE - 
+\n - QUEBRA DE LINHA NO TEXTO;
+\t- TAB ENTRE AS PALAVRAS;
+floor - ARREDONDA O NÚMERO PARA BAIXO;
+ceil - ARREDONDA O NÚMERO PRA CIMA;
+
 */
- 
