@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // CONVERSÃO DE STRING PARA OBJETO
+        const myJson = '{"nome": "vitor"}';
+        console.log(myJson)
+        console.log(typeof myJson) //STRING
+
+        const objJson = JSON.parse(myJson)
+        console.log(objJson)
+        console.log(typeof objJson) // OBJETO
+
+
+        // CONVERSÃO DE OBJETO ( JSON ) PARA STRING
+
+        console.log('----------------------')
+
+        const stringJson = JSON.stringify(objJson)
+
+        console.log(stringJson)
+        console.log( typeof stringJson) // STRING
+        
+    </script>
+</body>
+
+</html>
